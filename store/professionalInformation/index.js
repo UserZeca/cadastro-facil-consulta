@@ -1,5 +1,5 @@
 export const state = () => ({
-  name: 'asdsdsfd',
+  name: '',
   cpf: '',
   phone: '',
   location: {

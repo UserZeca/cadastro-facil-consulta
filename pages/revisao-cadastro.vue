@@ -5,11 +5,21 @@
             <div class="col-md-6">
                 <div class="card-body">
 
-                    <pre>
+                    <div>
+                      <label>Phone Number</label>
 
+                      <masked-input
+                        type="text"
+                        name="phone"
+                        class="form-control"
+                        v-model="phone"
+                        :mask="['(', /[0-9]/, /\d/,')', '9', ' ' , /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]"
+                        :guide="true"
+                        placeholderChar="_">
+                      </masked-input>
+                    </div>
 
-                    </pre>
-
+                  <button v-on:click="a"> TESTE</button>
                 </div>
             </div>
     </div>
@@ -22,9 +32,36 @@
 
 <script>
 
+
+    import MaskedInput from 'vue-text-mask';
+
     export default {
 
-        name: 'RevisaoCadastro',
+      name: 'RevisaoCadastro',
+
+        components: {
+        MaskedInput
+      },
+
+      data () {
+        return {
+          phone: '99 9 9999 9999'
+        }
+      },
+
+      methods: {
+
+        a(){
+
+          console.log(this.phone.replace(/\D/g,''));
+
+        },
+
+
+      }
+
+
+
 
     }
 
@@ -33,5 +70,10 @@
 
 <style>
 
+.erro{
+
+  border: 2px solid red;
+
+}
 
 </style>

@@ -14,8 +14,11 @@
                   for="a"
                   :value="professional.name"
                   labelContent="Nome completo*"
-                  placeHolder="Digite o nome completo"/>
-                <div id="emailHelp" class="form-text"> We'll never share your email with anyone else.</div>
+                  placeHolder="Digite o nome completo"
+                  minLength="3"
+                  maxLength="48"
+                  />
+
               </div>
 
               <div class="mb-3">
@@ -23,23 +26,39 @@
                   for="a"
                   labelContent="CPF"
                   placeHolder="Digite um CPF"
+                  mask="###.###.###-##"
                   />
               </div>
 
               <div class="mb-3">
                 <InputForms type="text"
+                  id="phone"
                   for="a"
                   labelContent="Número de celular*"
-                  placeHolder="(00) 0 0000-0000"/>
+                  placeHolder="(00) 0 0000-0000"
+                  mask="(##) #####-####"
+                  />
+                <!--
+                  <label>Phone Number</label>
+                  <masked-input
+                    type="text"
+                    name="phone"
+                    class="form-control"
+                    v-model="phone"
+                    :mask="['(', /[0-9]/, /\d/,')', '9', ' ' , /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]"
+                    :guide="true"
+                    placeholderChar="_">
+                  </masked-input>
+                -->
               </div>
 
               <div class="mb-3 row">
                 <div class="col">
-                 <SelectOption :items="items" placeHolder="Estado*"/>
+                 <SelectOption :items="items" labelContent="Estado*"/>
                 </div>
 
                 <div class="col">
-                  <SelectOption :items="items" placeHolder="Cidade*"/>
+                  <SelectOption :items="items" labelContent="Cidade*"/>
                 </div>
               </div>
 
@@ -78,6 +97,8 @@
     import InputForms from '../components/InputForms.vue';
     import ProgressBar from '../components/ProgressBar.vue';
     import ProgressButton from '../components/ProgressButton.vue';
+    import MaskedInput from 'vue-text-mask';
+
     //import store from '@/store';
     import {mapState} from 'vuex';
 
@@ -90,9 +111,12 @@
         SelectOption,
         InputForms,
         ProgressBar,
-        ProgressButton
+        ProgressButton,
+        MaskedInput
 
     },
+
+
 
     computed: {
       ...mapState({
@@ -110,6 +134,7 @@
               { option: "Outro" }
           ],
 
+          phone: ''
 
 
       };

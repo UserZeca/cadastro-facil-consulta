@@ -1,14 +1,17 @@
 <template>
 
+<div>
+  <label  class="form-check-label">{{labelContent}}</label>
 
   <select class="form-select" aria-label="Default select example">
-      <option selected>{{placeHolder}}</option>
+      <option selected>Selecione</option>
+
       <option v-for="item in items" :key="item.option" :value="item.option">
           {{item.option}}
       </option>
 
   </select>
-
+</div>
 
 </template>
 
@@ -17,15 +20,19 @@
         name: 'SelectOption',
         props: {
             items: Array,
-            placeHolder: String,
+            labelContent: String,
 
         },
     }
 </script>
 
 
-<style>
+<style scoped>
 
+  label{
 
+    margin-bottom: 8px;
+
+  }
 
 </style>
