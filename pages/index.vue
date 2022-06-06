@@ -1,10 +1,9 @@
 <template>
-  <div>
+  <main>
 
-    <h1>asdjskjdjkdf</h1>
+    <a href="http://localhost:3000/sobre-profissional">Iniciar Cadastro</a>
 
-
-  </div>
+  </main>
 
 </template>
 
