@@ -1,69 +1,40 @@
-# facil-consulta-cadastro
+# Fácil Consulta - [👩‍⚕Cadastro]
 
-## Build Setup
+## Observação: Devido a mudanças estruturais, o projeto foi mudado para um [novo repositório](https://github.com/UserZeca/cadastro-facil-consulta) 
 
-```bash
-# install dependencies
-$ npm install
+##### *Recomenda-se para uma maior compreensão, visualizar esse arquivo em algum visualizador de arquivos markdown. Extenções do Visual Studio Code como a Markdown Preview Github Styling (Link no final do arquivo) permitem isso.
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## Sistema de Cadastro (front-end)
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+O projeto refere-se à um Sistema de Cadastro para profisionais da saúde que desejam oferece seus serviços para eventuais consultas.
 
-# generate static project
-$ npm run generate
+## Status do Projeto
+  
+  Em construção 🚧
+
+### Pontos importantes (dúvidas/problemas/obsevações)
+
+- Bootstrap Vue, aparentemente não tem suporte oficial para a versão 3.0 do Vue js. 
+- Por algum motivo o Vue não está reconhecendo o Vuex, mesmo colocando o modúlo para ser utilizado globalmente (com .use no mount da aplicação). O erro retornado é que  $store não foi declarada.
+- O design do projeto ainda não foi todo concluído
+- Melhorar a documentação ao final do projeto 
+- Vale a pena restruturar com o Nuxt?
+
+## Como rodar o projeto 
+
+```
+npm install
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+##### Para rodar o projeto, utilize o comando a seguir na pasta raíz do projeto, e em seguida abrar no seu navegador o endereço correspondente que irá ser indicado pelo Nuxt.
+```
+npm run dev
+```
 
-## Special Directories
+### Extenções
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+[Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles) 
 
-### `assets`
+### Autor
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+@Ezequias Kluyvert de Oliveira Lemos
