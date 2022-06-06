@@ -10,19 +10,10 @@ O projeto refere-se à um Sistema de Cadastro para profisionais da saúde que de
   
   Em construção 🚧
   
-### Pontos importantes (dúvidas/problemas/obsevações)
+## Observações
 
-- Bootstrap Vue, aparentemente não tem suporte oficial para a versão 3.0 do Vue js. 
-- Por algum motivo o Vue não está reconhecendo o Vuex, mesmo colocando o modúlo para ser utilizado globalmente (com .use no mount da aplicação). O erro retornado é que  $store não foi declarada.
-- O design do projeto ainda não foi todo concluído
-- Melhorar a documentação ao final do projeto 
-- Vale a pena restruturar com o Nuxt?
-- Passar dados por referência, usar injeção de dependência pra criar, emitir um evento, qual caminho seguir pra tornar um componente, que possue um input, reutilizável?     
-
-## Reflexão
-
-Depois de quase 15 dias, não tão produtivos devido a rotina atual e também à problemas técnicos, tive a percepção que ficar 1 ano sem utilizar o Vue me trouxe vários desafios e dificuldades que eu não imaginei ter até determinado ponto do desenvolvimento do projeto. Ficou claro pra mim que devo me aprofundar mais no entendimento do vuex em conjunto de uma componentização mais limpa e versátil. Além disso, alguns pontos que me levaram a algumas soluções bem diferentes, seja na própria estruturação do projeto, seja em microproblemas como "Qual plugin utilizar para a criação de máscaras de input? E pra validação, será que esse é melhor? ele não parece bem documentado, muito confuso", a partir disso eu posso concluir que devo práticar não só mais o Vue, React, Angular, etc, mas também padrões de desenvolvimento, e apesar do projeto está longe de estar completo e eu não ter completado o objetivo, foi muito importante para mim perceber as falhas que devo corrigir para novas oportunidades.
-
+Se você está aqui a procura do projeto do teste técnico para dev front end da [Fácil Consulta](https://facilconsulta.com.br/), por favor, acesse [essa branch](https://github.com/UserZeca/cadastro-facil-consulta/tree/master).
+Nessa branch atual (main) estou dando continuidade ao projeto, agora não teste técnico, pois ele já terminou, mas como forma de estudo.  
 
 ## Como rodar o projeto 
 
