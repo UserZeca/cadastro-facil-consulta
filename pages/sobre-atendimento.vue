@@ -1,5 +1,5 @@
 <template>
-  <div class="container-body">
+  <div class="container-body card">
     <div class="row g-0">
         <h1 class="card-title ">Sobre o Atendimento</h1>
 
@@ -10,35 +10,47 @@
             -->
             <form>
 
-                <div class="mb-3 row">
-                    <div class="col">
-                        <SelectOption :items="items" placeHolder="Especialidade principal*"/>
+                <div class="mb-4 row">
+                  <div class="col">
+                      <SelectOption :items="items" labelContent="Especialidade principal*" />
                     </div>
                 </div>
+                <div>
+                  <div class="mb-2">
+                    <label>Informe o preço da consulta*</label>
+                  </div>
+                  <div class="input-group mb-4 ">
+                      <span class="input-group-text">$</span>
+                      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                  </div>
+                </div>
 
-                <div class="input-group mb-3">
-                    <span class="input-group-text">$</span>
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                    <span class="input-group-text">.00</span>
+                <div>
+                  <div class="mb-3">
+                    <label>Formas de pagamento da consulta*</label>
+                  </div>
+                  <div class="card-check mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label weight-700" for="flexCheckDefault">
+                            Pix
+                        </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-check mb-3">
+                  <div class="form-check ">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label weight-700" for="flexCheckChecked">
+                          Em dinheiro
+                      </label>
+                  </div>
                 </div>
 
 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Default checkbox
-                    </label>
+                <div class="mb-4 card-check">
+                  <StretchedInput :radioOptions="items" labelContent="Cartão de Crédito" name="opcoesdepagamento" :checked="teste"/>
                 </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
-                        Checked checkbox
-                    </label>
-                </div>
-
-                <StretchedInput :radioOptions="items" name="opcoesdepagamento" :checked="teste"/>
-
 
                 <div class="mb-3 row">
 
@@ -47,7 +59,7 @@
                     </div>
 
                     <div class="col-2">
-                        <h5>1 de 2</h5>
+                        <h5>2 de 2</h5>
                     </div>
 
                 </div>
@@ -60,10 +72,10 @@
           </div>
 
         </div>
-
         <div class="col-md-6 ">
-          <img src="https://res.cloudinary.com/dyie6o63u/image/upload/v1653663257/desktop-pagina-1_1_dvtzjh.png" class="img-fluid rounded-start " alt="...">
+          <img src="https://res.cloudinary.com/dyie6o63u/image/upload/v1653663281/desktop-pagina-2_bikyg9.png" class="img-fluid rounded-start " alt="...">
         </div>
+
 
     </div>
   </div>
@@ -91,9 +103,9 @@
             return {
 
                 items: [
-                    {option: 'Chiclete'},
-                    {option: 'Pipoca'},
-                    {option: 'Feijão Tropeiro'}
+                    {option: '1x sem juros'},
+                    {option: '2x sem juros'},
+                    {option: '3x sem juros'}
 
                 ],
 

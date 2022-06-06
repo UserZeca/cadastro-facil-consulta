@@ -1,7 +1,7 @@
 <template>
 
 <div>
-  <label  class="form-check-label">{{labelContent}}</label>
+  <label class="form-check-label">{{labelContent}}</label>
 
   <select class="form-select" aria-label="Default select example">
       <option selected>Selecione</option>

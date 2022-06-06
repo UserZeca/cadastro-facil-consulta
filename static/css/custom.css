@@ -1,19 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+
+  --danger: #DC3545;
+  --primary: #483698;
+  --secondary: #FFFFFF;
+  --secondary-1: #F9F9F9;
+  --secondary-3: #B9B9B9;
+  --secondary-4: #8A8A8A;
+  --secondary-7: #282828;
+  --cta: #FBDE40;
+  --cta-1: #FFE766;
+
+}
 
 body{
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FFE766;
-  color: #483698;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background-color: var(--cta);
+  color: var(--primary);
+
+}
+
+
+
+label{
+
+  color: var(--secondary-7);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+h1{
+
+  font-family: 'Comfortaa', cursive;
+  font-size: 42px;
+}
+
+h4 {
+
+  color: var(--secondary-7);
+  font-weight: bold;
+
 }
 
 .container-body{
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 90px;
+  padding: 60px;
+}
 
-  background-color: #FFFFFF;
+
+.card-check{
+  background-color: var(--secondary-1);
+  border: 1px solid var(--secondary-3);
+  padding: 15px 30px;
+  box-shadow: 0px 5px 5px var(--secondary-3);
+  border-radius: 10px;
+}
+
+
+.weight-700{
+
+  font-weight: 700;
 
 }
+
+.form-check-input:checked, .progress-bar{
+
+  background-color: var(--primary);
+
+}
+
+.btn, .input-group-text{
+
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+

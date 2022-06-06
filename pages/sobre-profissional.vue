@@ -1,14 +1,20 @@
 <template>
-  <div class="container-body">
+
+
+  <div class="card container-body" >
     <div class="row g-0" >
-        <h1 class="card-title ">Sobre o Profissional</h1>
+        <h1>Sobre o Profissional {{professional.name}}</h1>
 
         <div class="col-md-6">
           <div class="card-body">
             <!--<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. </p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             -->
+
             <form>
+              <div class="mb-3">
+                <h4>Dados do profissional</h4>
+              </div>
               <div class="mb-3">
                 <InputForms type="text"
                   for="a"
@@ -17,6 +23,7 @@
                   placeHolder="Digite o nome completo"
                   minLength="3"
                   maxLength="48"
+
                   />
 
               </div>
@@ -65,7 +72,7 @@
               <div class="mb-3 row">
 
                 <div class="col-10">
-                  <ProgressBar status="100" min="0" max="100"/>
+                  <ProgressBar status="50" min="0" max="100"/>
                 </div>
 
                 <div class="col-2">
@@ -133,7 +140,7 @@
               { option: "Pizza" },
               { option: "Outro" }
           ],
-
+          name: '',
           phone: ''
 
 
@@ -151,7 +158,6 @@
 
 
 <style>
-
 
 
 </style>

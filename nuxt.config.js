@@ -53,7 +53,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/mask.js' }
+    { src: '~/plugins/mask.js' },
+    { src: '~/plugins/vuelidate.js' }
+
     //'./plugins/mask'
   ],
 

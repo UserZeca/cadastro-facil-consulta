@@ -1,25 +1,26 @@
 <template>
 
-  <div>
-    <label for="exampleInputEmail1" class="form-label">{{labelContent}}</label>
+  <div class="container-input">
+    <label class="form-label">{{labelContent}}</label>
 
     <input v-if="mask != ''"
-      :type="type" :value="value" v-mask="mask" :minlength="minLength" :maxlength="maxLength"
+      :type="type" :value="value"  v-mask="mask" :minlength="minLength" :maxlength="maxLength"
       class="form-control"  aria-describedby="emailHelp"
       :placeholder="placeHolder ">
 
     <input v-else
-      :type="type" :value="value" :minlength="minLength" :maxlength="maxLength"
-      class="form-control"  aria-describedby="emailHelp"
+      :type="type" :value="value"  :minlength="minLength" :maxlength="maxLength"
+      class="form-control"  aria-describedby="emailHelp" valid
       :placeholder="placeHolder">
 
-     <div id="emailHelp" class="form-text"> We'll never share your email with anyone else.</div>
+    <div class="form-text erro-mensage"> </div>
 
   </div>
 
 </template>
 
 <script>
+
 
     export default {
 
@@ -70,7 +71,9 @@
             }
 
 
-        }
+        },
+
+
 
 
     }
@@ -82,13 +85,22 @@
 <style>
 
 input {
-  border: 2px solid currentcolor;
+  border: 1px solid var(--primary) !important;
 }
+
 input:invalid {
-  border: 2px dashed red;
+  border: 1px solid var(--danger);
 }
-input:invalid:focus {
-  background-image: linear-gradient(pink, lightgreen);
+
+.erro-mensage{
+
+    color: var(--danger);
+
 }
+
+.container-input{
+  min-height: 95px;
+}
+
 
 </style>

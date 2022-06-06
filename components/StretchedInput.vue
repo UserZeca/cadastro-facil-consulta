@@ -8,14 +8,13 @@
               data-bs-toggle="collapse" data-bs-target="#collapseT"
               aria-expanded="true" aria-controls="collapseT"
           >
-          <label class="form-check-label" for="flexCheckDefault">
-              Chocolate
+          <label class="form-check-label weight-700" for="flexCheckDefault">
+              {{labelContent}}
           </label>
       </div>
 
       <div class="collapse" id="collapseT">
-
-            <div class="form-check" v-for="item in radioOptions" :key="item.option" :value="item.option">
+            <div class="form-check spacing-input-radio" v-for="item in radioOptions" :key="item.option" :value="item.option">
               <label class="form-check-label">
                   <input class="form-check-input" type="radio" :name="name">
                   {{item.option}}
@@ -33,15 +32,15 @@
               aria-expanded="true" aria-controls="collapseT"
               checked
           >
-          <label class="form-check-label" for="flexCheckDefault">
-              Chocolate
+          <label class="form-check-label weight-700" for="flexCheckDefault">
+              {{labelContent}}
           </label>
       </div>
 
       <div class="collapse show" id="collapseT">
 
-            <div class="form-check show" v-for="item in radioOptions" :key="item.option" :value="item.option">
-              <label class="form-check-label">
+            <div class="form-check show spacing-input-radio" v-for="item in radioOptions" :key="item.option" :value="item.option">
+              <label class="form-check-label label-input-radio">
                   <input class="form-check-input" type="radio" :name="name">
                   {{item.option}}
               </label>
@@ -63,6 +62,10 @@
             checked: {
               type: Boolean,
               default: false
+            },
+            labelContent: {
+              type: String,
+              default: ''
             }
         }
 
@@ -71,7 +74,12 @@
 </script>
 
 
-<style>
+<style scoped>
+
+.spacing-input-radio{
+
+  margin-left: 60px;
+}
 
 
 
