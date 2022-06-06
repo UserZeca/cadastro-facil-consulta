@@ -1,7 +1,5 @@
 # Fácil Consulta - [👩‍⚕Cadastro]
 
-## Observação: Devido a mudanças estruturais, o projeto foi mudado para um [novo repositório](https://github.com/UserZeca/cadastro-facil-consulta) 
-
 ##### *Recomenda-se para uma maior compreensão, visualizar esse arquivo em algum visualizador de arquivos markdown. Extenções do Visual Studio Code como a Markdown Preview Github Styling (Link no final do arquivo) permitem isso.
 
 ## Sistema de Cadastro (front-end)
