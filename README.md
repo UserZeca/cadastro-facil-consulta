@@ -10,11 +10,6 @@ O projeto refere-se à um Sistema de Cadastro para profisionais da saúde que de
   
   Em construção 🚧
   
-  obs.: Como o projeto ainda não está completo, para acessar as rotas você deve utilizar algo como:
-  
-  http://localhost:3000/sobre-profissional <br/>
-  http://localhost:3000/sobre-atendimento
-
 ### Pontos importantes (dúvidas/problemas/obsevações)
 
 - Bootstrap Vue, aparentemente não tem suporte oficial para a versão 3.0 do Vue js. 
@@ -39,6 +34,14 @@ npm install
 ```
 npm run dev
 ```
+
+
+**Obs.: Como o projeto ainda não está completo, para acessar as rotas você deve utilizar algo como:**
+  
+  http://localhost:3000/sobre-profissional <br/>
+  http://localhost:3000/sobre-atendimento
+
+
 
 ### Extenções
 
