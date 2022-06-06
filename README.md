@@ -12,7 +12,7 @@ O projeto refere-se à um Sistema de Cadastro para profisionais da saúde que de
   
   obs.: Como o projeto ainda não está completo, para acessar as rotas você deve utilizar algo como:
   
-  http://localhost:3000/sobre-profissional
+  http://localhost:3000/sobre-profissional <br/>
   http://localhost:3000/sobre-atendimento
 
 ### Pontos importantes (dúvidas/problemas/obsevações)
